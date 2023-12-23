@@ -4,7 +4,7 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.header
+.background
 {
     min-height: 100vh;
     width: 100%;
@@ -195,6 +195,7 @@ nav .fa
     top: 120px; 
     outline: #ffa600;
     outline-width: 10cm;
+    animation: Slide_Up 2.6s ease;
 }
 
 #pic2
@@ -211,5 +212,35 @@ nav .fa
     left: 120%;
     outline: #ffa600;
     outline-width: 10cm;
+    animation: Slide_Up 2.1s ease;
     
+}
+
+#pic3
+{
+    position: relative;
+    width: 400px;       /* Set the width to 300 pixels */
+    height: 400px;      /* Set the height to 300 pixels */
+    min-width: 300px;   /* Set the minimum width to 300 pixels */
+    min-height: 300px;  /* Set the minimum height to 300 pixels */
+    background-image: url(images/project3.png);
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensure the image fits within the specified dimensions without stretching */
+    left: 120%;
+    outline: #ffa600;
+    outline-width: 10cm;
+    animation: Slide_Up 1.4s ease;
+}
+
+/*Slide Up animation*/
+@keyframes Slide_Up 
+{
+    0% 
+    {
+        transform: translateY(250px);
+    }
+    100% 
+    {
+        transform: translateY(0px);
+    }
 }
